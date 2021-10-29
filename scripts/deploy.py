@@ -10,7 +10,7 @@ def deploy_x():
     account = get_account()
     x_contract =X.deploy({'from':account}) #contract adresi döndürür
     #price feed addres = config['networks]['rinkeby'][network.show_active()]["eth_usd_price_feed"00]
-    transaction = x_contract.createCharacter("gurkan",{'from':account})
+    transaction = x_contract.createCharacter("batu",{'from':account})
     print(f"contract deployed to : {x_contract.address}")
     transaction.wait(1)
     viewChar = x_contract.viewChar(0)
